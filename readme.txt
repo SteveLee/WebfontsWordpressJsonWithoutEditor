@@ -22,7 +22,9 @@ You can also used the WYSIWYG editor with web fonts enabled in the plugin so you
 == Installation ==
 
 This section describes how to install the plugin and get it working.
-First method--> if you have FTP access
+
+FIRST METHOD (Have FTP access)
+
 1. Download the plugin
 2. Extract the downloaded plugin.
 3. Rename the folder name "SteveLee-WebfontsWordpressJsonWithoutEditor-d2e665d" to "WebfontsWordpressJsonWithoutEditor".
@@ -30,7 +32,8 @@ First method--> if you have FTP access
 5. Upload "WebfontsWordpressJsonWithoutEditor" folder to the `/wp-content/plugins/` directory
 6. Activate the 'Webfonts' plugin through the 'Plugins' menu in WordPress
 
-second Method-->If you don't have FTP accesss
+SECOND METHOD (Don't have FTP accesss)
+
 1. Downlaod the plugin.
 2. Extract the downloaded plugin.
 3. Rename the folder name "SteveLee-WebfontsWordpressJsonWithoutEditor-d2e665d" to "WebfontsWordpressJsonWithoutEditor".
