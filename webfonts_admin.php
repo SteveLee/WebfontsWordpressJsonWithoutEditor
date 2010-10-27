@@ -625,7 +625,7 @@ $result = $wpdb->get_row($wpdb->prepare("SELECT * FROM ".$wp_wfs_configure_table
 									//for($i=0;$i< count($wfs_selector);$i++){
 									foreach($wfs_selector as $selector){
 										if(($i%2)==0){$class = "even";}else{$class = "odd";}
-										$link = in_array($selector,$wfsSelectorTag)?'Added to webfonts':'<a href="javascript:void(0);" id="'.urlencode($selector).'" class="addtowebfonts">Add to webfonts</a>';
+										$link = in_array($selector,$wfsSelectorTag)?'Added to webfonts':'<a href="javascript:void(0);" id="'.$selector.'" class="addtowebfonts">Add to webfonts</a>';
 										echo '<div class="wfs_row '.$class.'">
 												<div class="wfs_existing_selector">'.$selector.'</div>';
 										echo '<div class="wfs_existing_selector_link" id="addFonts_'.$i.'">'.$link.'</div>
