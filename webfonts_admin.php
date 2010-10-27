@@ -407,7 +407,7 @@ $result = $wpdb->get_row($wpdb->prepare("SELECT * FROM ".$wp_wfs_configure_table
                   <span><strong><?php _e('Please select the option to be used'); ?></strong></span>
                      <div class="clear"></div>
                   <div class="wfs_visible">
-                    <label for="javscript"><input type="radio" id="javscript" name="source_selection"<?php echo ($result->project_options == 0)?'checked="checked"':''; ?>  value="0"/>&nbsp;&nbsp;Javscript</label><br />
+                    <label for="javscript"><input type="radio" id="javscript" name="source_selection"<?php echo ($result->project_options == 0)?'checked="checked"':''; ?>  value="0"/>&nbsp;&nbsp;Javascript</label><br />
                     <label for="stylesheet"><input type="radio" id="stylesheet" name="source_selection" <?php echo ($result->project_options == 1)?'checked="checked"':''; ?>  value="1" />&nbsp;&nbsp;Stylesheet</label>
                   </div>
                 </div>
@@ -504,7 +504,7 @@ $result = $wpdb->get_row($wpdb->prepare("SELECT * FROM ".$wp_wfs_configure_table
                                 <td><?php echo $SelectorTag; ?></td>
                                 <td><?php echo $fontsArr[0]; ?></td>
                                 <td><span class="wfs_selectors" style="font-size:26px;font-family:<?php echo $fontsArr[3]; ?>" id="fontid_<?php echo $count;?>"><?php echo $fontsArr[1]?></span></td>
-                                <td><a href="admin.php?page=wfs_options&func=selector_act&pid=<?php echo $pid; ?>&sid=<?php echo $SelectorID ?>" onclick="return confirm('Are you sure want to detlete selector <?php echo $SelectorTag; ?>?');" >Remove</a><input type="hidden" id="selector_<?php echo $count?>" name="selector_<?php echo $count?>" value="<?php echo $SelectorID; ?>" />
+                                <td><a href="admin.php?page=wfs_options&func=selector_act&pid=<?php echo $pid; ?>&sid=<?php echo $SelectorID ?>" onclick="return confirm('Are you sure want to delete selector <?php echo $SelectorTag; ?>?');" >Remove</a><input type="hidden" id="selector_<?php echo $count?>" name="selector_<?php echo $count?>" value="<?php echo $SelectorID; ?>" />
                                 </td>
                             </tr>
 								<?php 
@@ -522,7 +522,7 @@ $result = $wpdb->get_row($wpdb->prepare("SELECT * FROM ".$wp_wfs_configure_table
 											<td><?php echo $SelectorTag; ?></td>
 											<td><?php echo $fontsArr[0]; ?></td>
 											<td><span class="wfs_selectors" style="font-size:26px;font-family:<?php echo $fontsArr[3]; ?>" id="fontid_<?php echo $count;?>"><?php echo $fontsArr[1]?></span></td>
-											<td><a href="admin.php?page=wfs_options&func=selector_act&pid=<?php echo $pid; ?>&sid=<?php echo $SelectorID ?>" onclick="return confirm('Are you sure want to detlete selector <?php echo $SelectorTag; ?>?');" >Remove</a><input type="hidden" id="selector_<?php echo $count?>" name="selector_<?php echo $count?>" value="<?php echo $SelectorID; ?>" />
+											<td><a href="admin.php?page=wfs_options&func=selector_act&pid=<?php echo $pid; ?>&sid=<?php echo $SelectorID ?>" onclick="return confirm('Are you sure want to delete selector <?php echo $SelectorTag; ?>?');" >Remove</a><input type="hidden" id="selector_<?php echo $count?>" name="selector_<?php echo $count?>" value="<?php echo $SelectorID; ?>" />
 											</td>
 										</tr>
 										<?php
