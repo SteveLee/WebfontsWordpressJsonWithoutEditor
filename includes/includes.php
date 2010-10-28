@@ -6,7 +6,15 @@ This program is distributed under the terms of the GNU General Public License
 /*start defining global variables*/
 
 define("TBLCONFIG","wfs_configure");
-define("FOLDER_NAME","WebfontsWordpressJsonWithoutEditor");
+if(is_dir(WP_PLUGIN_DIR.'/webfontswordpressjsonwithouteditor'))
+	{ 
+	define("FOLDER_NAME","webfontswordpressjsonwithouteditor");
+	}
+else if(is_dir(WP_PLUGIN_DIR.'/WebfontsWordpressJsonWithoutEditor'))
+	{
+	define("FOLDER_NAME","WebfontsWordpressJsonWithoutEditor");
+	}
+//define("FOLDER_NAME","WebfontsWordpressJsonWithoutEditor");
 define("REQESTURI","http://api.fonts.com");
 define("FFCSSHDLRURI",REQESTURI."/api/FontFaceCssHandler.axd?ProjectId=");
 //define("GETFONTFAMILIESURI",REQESTURI."/api/GetFontFamilies.axd?projectid=");
